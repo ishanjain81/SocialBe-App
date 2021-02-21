@@ -1,0 +1,11 @@
+
+<% if (user.isvalid) {%>
+    <h1>Change Your Password</h1>
+    <form action="resetPass/<%= user._id %>" method="POST">
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <input type="submit" value="Change Password">
+    </form>
+<% } else{%>
+    <h2>Link has Expired!</h2>
+<% } %>

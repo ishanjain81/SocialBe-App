@@ -1,6 +1,9 @@
 const User = require('../models/user');
+const RPass = require('../models/reset_pass');
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
+const ResetPasswordMailer = require('../mailers/resetPass_mailer');
 
 // module.exports.profile = function(req, res){
 //     if(req.cookies.user_id){
@@ -113,7 +116,7 @@ module.exports.create = function(req,res){
             User.create(req.body,function(err,user){
                 if(err){req.flash('error', err); return}
                 return res.redirect('/users/sign-in');
-            })
+            });
         }
         else{
             req.flash('success', 'You have signed up, login to continue!');
@@ -160,3 +163,78 @@ module.exports.destroySession = function(req,res){
     req.flash('success','You have logged out');
     return res.redirect('/');
 }
+
+module.exports.EnteringEmail = function(req,res){
+    return res.render('reset_pass_email',{
+        title: "Reset-Password",
+    });
+}
+
+module.exports.updatePass = function(req,res){
+    console.log(req.body.email);
+    User.findOne({email: req.body.email},function(err, user){
+        if(err){console.log('Error in finding a User'); return}
+        if(user){
+            let Calling = () => {
+                RPass.findOne({user: user._id},function(err,User_Pass){
+                    if(err){console.log('Error in finding a User in RPass'); return}
+                    ResetPasswordMailer.ResetPass(User_Pass,req.body.email);
+                    req.flash('success','Please Check Your Mail To Change Your Password');
+                    return res.redirect('/');
+                });
+            }
+            RPass.create({
+                user: user._id,
+                token: crypto.randomBytes(20).toString('hex'),
+                isvalid: true,
+            },Calling);
+        }
+        else{
+            req.flash('error', 'User doesnt exist');
+            res.redirect('back');
+        }
+    });
+}
+
+module.exports.PassingResetForm = function(req,res){
+    const Token = req.query.to;
+    // console.log('Inside Form To Reset Password ',Token);
+    RPass.findOne({token: Token},function(err,user){
+        if(err){console.log('Error in finding a User Using Token'); return}
+        if(!user){
+            req.flash('error', 'Invalid Url');
+            return res.redirect('/users/sign-in');
+        }
+        else{
+            return res.render('reset_Pass_Form',{
+                title: "Reset-Password-Form",
+                user: user
+            });
+        }
+    });
+}
+
+module.exports.updatePassword = function(req,res){
+    if(req.body.password != req.body.confirm_password){
+        req.flash('error', 'Passwords do not match');
+        return res.redirect('back');
+    }
+    RPass.findById(req.params.id,function(err,user){
+        if(err){console.log('Error in finding a User Using Token in Password Updating'); return}
+        if(!user.isvalid){
+            req.flash('error', 'Link has Expired!');
+            return res.redirect('/users/sign-in');
+        }
+        else{
+            user.isvalid = false;
+            User.findById(user.user,function(err,person){
+                if(err){console.log('Error in finding a Person Using Token in Password Updating'); return}
+                person.password = req.body.password;
+                user.save();
+                person.save();
+                req.flash('success','Password Changed Successfully');
+                return res.redirect('/users/sign-in');
+            });
+        }
+    });
+}   
