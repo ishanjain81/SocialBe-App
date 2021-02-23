@@ -1,14 +1,27 @@
-<h1>Sign In</h1>
+<div id="sign-in-main">
+    <div id="sign-in">
+        <div class="sign-in-outer">
+            <img src="/images/welcome.jpg" alt="Welocome">
+        </div>
+        <div class="sign-in-outer">
+            <div>
+                <h1>Sign In</h1>
 
-<form action="/users/create-session" method="POST">
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <input type="submit" value="Sign-In">
-</form>
+                <form action="/users/create-session" method="POST" id="sign-in-form">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit"> <p> CONTINUE </p> </button>
+                </form>
+                <p id="forgot-password">
+                    <a href="/users/resetPassForm">Forgot Password</a>
+                </p>
+                <p id="or-sign-in">OR</p>
 
-<p>
-    <a href="/users/auth/google">Google Sign In/Sign Up</a>
-</p>
-<p>
-    <a href="/users/resetPassForm">Forgot Password</a>
-</p>
+                <form action="/users/auth/google" method="GET" id="google-sign-in">
+                    <button type="submit"><img src="/images/google-sign-in.png" alt="Sign-In"></button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
