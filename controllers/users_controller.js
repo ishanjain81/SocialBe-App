@@ -183,6 +183,12 @@ module.exports.updatePass = function(req,res){
                     return res.redirect('/');
                 });
             }
+            RPass.findOne({user: user._id},function(err,User_Pass){
+                if(err){console.log('Error in finding a User in RPass And Deleting'); return}
+                if(User_Pass){
+                    User_Pass.remove();
+                }
+            });
             RPass.create({
                 user: user._id,
                 token: crypto.randomBytes(20).toString('hex'),
