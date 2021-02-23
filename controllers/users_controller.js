@@ -4,6 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const ResetPasswordMailer = require('../mailers/resetPass_mailer');
+const SignUpMailer = require('../mailers/signup_mailer');
+
 
 // module.exports.profile = function(req, res){
 //     if(req.cookies.user_id){
@@ -115,12 +117,14 @@ module.exports.create = function(req,res){
         if(!user){
             User.create(req.body,function(err,user){
                 if(err){req.flash('error', err); return}
+                req.flash('success', 'You have signed up, login to continue!');
+                SignUpMailer.newSignUp(req.body.email,req.body.name);
                 return res.redirect('/users/sign-in');
             });
         }
         else{
-            req.flash('success', 'You have signed up, login to continue!');
-            res.redirect('back');
+            req.flash('error', 'User Already exits ! Please Sign in');
+            return res.redirect('/users/sign-in');
         }
     });
 }
