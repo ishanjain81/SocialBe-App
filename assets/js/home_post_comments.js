@@ -75,7 +75,10 @@ class PostComments{
                             <small>
                             
                                 <a class="toggle-like-button" data-likes="0" href="/likes/toggle/?id=${comment._id}&type=Comment">
-                                    0 Likes
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <small id="thumps-up">
+                                        0 Likes
+                                    </small>
                                 </a>
                             
                             </small>

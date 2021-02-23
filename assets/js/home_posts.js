@@ -56,7 +56,10 @@
                         <small>
                             
                                 <a class="toggle-like-button" data-likes="0" href="/likes/toggle/?id=${post._id}&type=Post">
-                                    0 Likes
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <small id="thumps-up">
+                                        0 Likes
+                                    </small>
                                 </a>
                             
                         </small>

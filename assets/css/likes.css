@@ -1,0 +1,11 @@
+.toggle-like-button {
+  text-decoration: none;
+  color: grey; }
+  .toggle-like-button small {
+    font-size: 12px;
+    color: green; }
+  .toggle-like-button i {
+    color: red; }
+
+.like-red {
+  color: red; }

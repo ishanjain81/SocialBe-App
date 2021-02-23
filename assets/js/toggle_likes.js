@@ -10,7 +10,7 @@ class ToggleLike{
         $(this.toggler).click(function(e){
             e.preventDefault();
             let self = this;
-
+            let clr = true;
             // this is a new way of writing ajax which you might've studied, it looks like the same as promises
             $.ajax({
                 type: 'POST',
@@ -21,14 +21,20 @@ class ToggleLike{
                 console.log(likesCount);
                 if (data.data.deleted == true){
                     likesCount -= 1;
+                    clr = false;
                     
                 }else{
                     likesCount += 1;
                 }
 
-
+                if(clr){
+                    $(self).addClass('like-red');
+                }
+                else{
+                    $(self).removeClass('like-red');
+                }
                 $(self).attr('data-likes', likesCount);
-                $(self).html(`${likesCount} Likes`);
+                $(self).children("small").text(`${likesCount} Likes`);
 
             })
             .fail(function(errData) {

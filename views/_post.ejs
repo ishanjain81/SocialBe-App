@@ -16,7 +16,10 @@
         <small>
             <% if (locals.user){ %>
                 <a class="toggle-like-button" data-likes="<%= post.likes.length %>" href="/likes/toggle/?id=<%=post._id%>&type=Post">
-                    <%= post.likes.length %> Likes
+                    <i class="fas fa-thumbs-up"></i>
+                    <small id="thumps-up">
+                        <%= post.likes.length %> Likes
+                    </small>
                 </a>
             <% }else{ %>
                 <%= post.likes.length %> Likes
