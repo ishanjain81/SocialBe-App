@@ -3,19 +3,20 @@
   height: 100vh;
   margin: 0%;
   padding: 0%;
-  top: -2vh;
-  background-color: #FF3CAC;
-  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); }
+  top: -1.24vh;
+  background-image: url("https://lh3.googleusercontent.com/proxy/1kDeYI1B_bCr-gT6hfOfxsrAPjCOja5QT1ondQzoEjY1kPnl7GCPSyAhVD-UtcUnn9cZ1hDrYGX19ncBQP3xnQOmjIEyiGLHayvogpO91C85_c5mJaf5BdtqehI2CfeobCbY7B4WB7W5");
+  background-repeat: no-repeat;
+  background-size: cover; }
   #sign-in-main #sign-in {
     margin: 10px;
     height: 75vh;
     width: 70%;
-    left: 13%;
+    left: 19%;
     position: relative;
     top: 6.8vh;
     display: flex; }
     #sign-in-main #sign-in .sign-in-outer {
-      width: 50%;
+      width: 42%;
       height: 98%;
       margin-top: 2px;
       margin-bottom: 2px;
@@ -23,7 +24,7 @@
       margin-right: 1px;
       background-color: white;
       border-radius: 20px;
-      box-shadow: 2px 2px #ff7ae9;
+      box-shadow: 2px 2px #f3ecf2;
       background: #ffa0d0;
       background: linear-gradient(90deg, #ffa0d0 0%, #f5ff9e 56%); }
       #sign-in-main #sign-in .sign-in-outer img {
@@ -34,12 +35,16 @@
         width: 65%;
         position: relative;
         margin: 2rem;
-        left: 12%;
+        left: 10%;
         top: 6%; }
         #sign-in-main #sign-in .sign-in-outer div h1 {
           font-family: sans-serif;
           font-size: 2.2rem;
-          letter-spacing: 1px; }
+          letter-spacing: 1px;
+          font-weight: 600;
+          margin-bottom: 20px;
+          text-align: center;
+          color: darkblue; }
         #sign-in-main #sign-in .sign-in-outer div #sign-in-form {
           margin-bottom: 2%; }
           #sign-in-main #sign-in .sign-in-outer div #sign-in-form input {
@@ -47,7 +52,7 @@
             margin-bottom: 5%;
             font-size: 18px;
             background-color: transparent;
-            width: 90%;
+            width: 100%;
             height: 50px;
             border: none;
             outline: none;
@@ -59,9 +64,11 @@
             background: linear-gradient(90deg, #7b42e4 0%, #e14de6 47%);
             box-sizing: border-box;
             padding: 4px;
+            margin-left: 2px;
+            margin-top: 15px;
             border: 0px solid black;
-            width: 90%;
-            height: 2.5rem;
+            width: 100%;
+            height: 2.8rem;
             border-radius: 18px;
             outline: none; }
             #sign-in-main #sign-in .sign-in-outer div #sign-in-form button:hover {
@@ -80,8 +87,9 @@
         #sign-in-main #sign-in .sign-in-outer div #forgot-password {
           margin: 0%;
           box-sizing: border-box;
+          margin-top: 15px;
           position: relative;
-          left: 31%; }
+          left: 33%; }
           #sign-in-main #sign-in .sign-in-outer div #forgot-password a {
             text-decoration: none;
             font-size: 16px; }
@@ -91,17 +99,17 @@
           margin: 0%;
           margin-top: 6px;
           position: relative;
-          left: 43%;
+          left: 46%;
           display: inline-block;
           width: auto;
           font-size: 1.1rem; }
         #sign-in-main #sign-in .sign-in-outer div #google-sign-in {
-          margin-top: 5px; }
+          margin-top: 10px; }
           #sign-in-main #sign-in .sign-in-outer div #google-sign-in button {
-            width: 90%;
+            width: 100%;
             padding: 3px;
             box-sizing: border-box;
-            height: 42px;
+            height: 45px;
             background-color: white;
             border: 0.5px solid #4d4d4d;
             outline: none;
@@ -112,3 +120,8 @@
             #sign-in-main #sign-in .sign-in-outer div #google-sign-in button:hover {
               cursor: pointer;
               box-shadow: 2px 2px lightgrey; }
+        #sign-in-main #sign-in .sign-in-outer div h4 {
+          font-size: 1.22rem;
+          text-align: center; }
+          #sign-in-main #sign-in .sign-in-outer div h4 a {
+            text-decoration: none; }
