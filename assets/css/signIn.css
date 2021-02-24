@@ -23,6 +23,7 @@
       margin-right: 1px;
       background-color: white;
       border-radius: 20px;
+      box-shadow: 2px 2px #ff7ae9;
       background: #ffa0d0;
       background: linear-gradient(90deg, #ffa0d0 0%, #f5ff9e 56%); }
       #sign-in-main #sign-in .sign-in-outer img {
@@ -30,72 +31,84 @@
         height: 100%;
         border-radius: 20px; }
       #sign-in-main #sign-in .sign-in-outer div {
-        width: 80%;
+        width: 65%;
         position: relative;
         margin: 2rem;
-        left: 8%; }
+        left: 12%;
+        top: 6%; }
         #sign-in-main #sign-in .sign-in-outer div h1 {
           font-family: sans-serif;
-          font-size: 1.8rem;
+          font-size: 2.2rem;
           letter-spacing: 1px; }
         #sign-in-main #sign-in .sign-in-outer div #sign-in-form {
           margin-bottom: 2%; }
           #sign-in-main #sign-in .sign-in-outer div #sign-in-form input {
             display: block;
             margin-bottom: 5%;
-            font-size: 13px;
+            font-size: 18px;
             background-color: transparent;
-            width: 80%;
-            height: 40px;
+            width: 90%;
+            height: 50px;
             border: none;
             outline: none;
-            border-bottom: 2.5px solid magenta; }
+            border-bottom: 2.5px solid magenta;
+            font-family: sans-serif;
+            letter-spacing: 1px; }
           #sign-in-main #sign-in .sign-in-outer div #sign-in-form button {
             background: #7b42e4;
             background: linear-gradient(90deg, #7b42e4 0%, #e14de6 47%);
             box-sizing: border-box;
-            padding: 3px;
-            width: 80%;
-            height: 2rem; }
+            padding: 4px;
+            border: 0px solid black;
+            width: 90%;
+            height: 2.5rem;
+            border-radius: 18px;
+            outline: none; }
             #sign-in-main #sign-in .sign-in-outer div #sign-in-form button:hover {
-              cursor: pointer; }
+              cursor: pointer;
+              box-shadow: 2px 2px lightgrey;
+              background: #722ef0;
+              background: linear-gradient(90deg, #722ef0 0%, rgba(225, 77, 230, 0.871884) 67%); }
             #sign-in-main #sign-in .sign-in-outer div #sign-in-form button p {
               color: white;
               padding: 1px;
               margin: 0%;
               font-family: sans-serif;
-              font-size: 0.8rem;
+              font-size: 1rem;
               letter-spacing: 5px;
               font-weight: 700; }
         #sign-in-main #sign-in .sign-in-outer div #forgot-password {
           margin: 0%;
           box-sizing: border-box;
           position: relative;
-          left: 28%; }
+          left: 31%; }
           #sign-in-main #sign-in .sign-in-outer div #forgot-password a {
             text-decoration: none;
-            font-size: 12px; }
+            font-size: 16px; }
             #sign-in-main #sign-in .sign-in-outer div #forgot-password a:hover {
               color: #4ea0e4; }
         #sign-in-main #sign-in .sign-in-outer div #or-sign-in {
           margin: 0%;
           margin-top: 6px;
           position: relative;
-          left: 36%;
+          left: 43%;
           display: inline-block;
           width: auto;
-          font-size: 0.8rem; }
+          font-size: 1.1rem; }
         #sign-in-main #sign-in .sign-in-outer div #google-sign-in {
           margin-top: 5px; }
           #sign-in-main #sign-in .sign-in-outer div #google-sign-in button {
-            width: 80%;
+            width: 90%;
             padding: 3px;
             box-sizing: border-box;
-            height: 32px;
+            height: 42px;
             background-color: white;
-            border-radius: 12px; }
+            border: 0.5px solid #4d4d4d;
+            outline: none;
+            border-radius: 16px; }
             #sign-in-main #sign-in .sign-in-outer div #google-sign-in button img {
               height: 98%;
               width: 98%; }
             #sign-in-main #sign-in .sign-in-outer div #google-sign-in button:hover {
-              cursor: pointer; }
+              cursor: pointer;
+              box-shadow: 2px 2px lightgrey; }
