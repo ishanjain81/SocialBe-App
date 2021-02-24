@@ -4,7 +4,7 @@
     margin: 0%;
     padding: 0%;
     top: -1.24vh;
-    background-image: url("https://lh3.googleusercontent.com/proxy/1kDeYI1B_bCr-gT6hfOfxsrAPjCOja5QT1ondQzoEjY1kPnl7GCPSyAhVD-UtcUnn9cZ1hDrYGX19ncBQP3xnQOmjIEyiGLHayvogpO91C85_c5mJaf5BdtqehI2CfeobCbY7B4WB7W5");
+    background-image: url("/images/sign-in-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     #sign-in{
@@ -142,6 +142,10 @@
                     text-align: center;
                     a{
                         text-decoration: none;
+                        color: rgb(41, 27, 231);
+                        &:hover{
+                            color: rgba(19, 150, 236, 0.925);
+                        }
                     }
                 }
             }

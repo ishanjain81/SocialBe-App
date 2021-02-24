@@ -4,7 +4,7 @@
   margin: 0%;
   padding: 0%;
   top: -1.24vh;
-  background-image: url("https://lh3.googleusercontent.com/proxy/1kDeYI1B_bCr-gT6hfOfxsrAPjCOja5QT1ondQzoEjY1kPnl7GCPSyAhVD-UtcUnn9cZ1hDrYGX19ncBQP3xnQOmjIEyiGLHayvogpO91C85_c5mJaf5BdtqehI2CfeobCbY7B4WB7W5");
+  background-image: url("/images/sign-in-background.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
   #sign-in-main #sign-in {
@@ -124,4 +124,7 @@
           font-size: 1.22rem;
           text-align: center; }
           #sign-in-main #sign-in .sign-in-outer div h4 a {
-            text-decoration: none; }
+            text-decoration: none;
+            color: #291be7; }
+            #sign-in-main #sign-in .sign-in-outer div h4 a:hover {
+              color: rgba(19, 150, 236, 0.925); }

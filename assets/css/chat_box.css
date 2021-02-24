@@ -31,7 +31,7 @@
   #user-chat-box #chat-messages-list::-webkit-scrollbar {
     display: none; }
   #user-chat-box #chat-message-input-container {
-    height: 24%;
+    height: 25%;
     width: 100%;
     display: flex;
     flex-direction: row; }
