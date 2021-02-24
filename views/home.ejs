@@ -43,3 +43,10 @@
         let toggleLike = new ToggleLike(self);
     });
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js"></script>
+<script src="/js/chat_engine.js"></script>
+<% if(locals.user){ %>
+    <script>
+        new ChatEngine('user-chat-box','<%= locals.user.email %>')
+    </script>
+<% } %>
