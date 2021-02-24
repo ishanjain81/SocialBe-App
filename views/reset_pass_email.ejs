@@ -1,6 +1,15 @@
-<h2>Enter Your Email To Change Your Password</h2>
+<link rel="stylesheet" href="/css/reset-pass-mail.css">
+<div id="reset-pass-mail-outer">
+    <div id="reset-pass-mail">
+        <div><img src="/images/password-reset-mail.png" alt="Password-Reset"></div>
+        <div id="reset-mail-form">
+            <h3>Forgot Password</h3>
+            <p>Enter Your Registered Email</p>
 
-<form action="/users/resetPass" method="POST">
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="submit" value="Submit">
-</form>
+            <form action="/users/resetPass" method="POST">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Send Password Reset Link</button>
+            </form>
+        </div>
+    </div>
+</div>

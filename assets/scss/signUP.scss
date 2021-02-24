@@ -46,6 +46,7 @@
                 }
                 &:hover{
                     box-shadow: 4px 4px grey;
+                    cursor: pointer;
                 }
             }
         }
@@ -80,6 +81,7 @@
                     box-shadow: 2px 2px darkgray;
                     background: rgb(19,146,233);
                     background: radial-gradient(circle, rgba(19,146,233,0.9307073171065301) 7%, rgba(130,70,252,1) 95%);
+                    cursor: pointer;
                 }
             }
         }

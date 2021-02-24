@@ -39,7 +39,8 @@
         height: 98%;
         border-radius: 20px; }
       #sign-up-outer #sign-up #google-sign-up button:hover {
-        box-shadow: 4px 4px grey; }
+        box-shadow: 4px 4px grey;
+        cursor: pointer; }
     #sign-up-outer #sign-up #sign-up-form input {
       display: block;
       box-sizing: border-box;
@@ -68,7 +69,8 @@
       #sign-up-outer #sign-up #sign-up-form button:hover {
         box-shadow: 2px 2px darkgray;
         background: #1392e9;
-        background: radial-gradient(circle, rgba(19, 146, 233, 0.930707) 7%, #8246fc 95%); }
+        background: radial-gradient(circle, rgba(19, 146, 233, 0.930707) 7%, #8246fc 95%);
+        cursor: pointer; }
     #sign-up-outer #sign-up h4 {
       font-size: 1.3rem;
       text-align: center; }
