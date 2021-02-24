@@ -30,6 +30,9 @@ class ChatEngine{
             $('#send-message').click(function(){
                 let msg = $('#chat-message-input').val();
 
+                //added for automatic bottom scroll as new message arrives..
+                $("#chat-messages-list").stop().animate({ scrollTop: $("#chat-messages-list")[0].scrollHeight}, 200);
+
                 if(msg != ''){
                     self.socket.emit('send_message',{
                         message: msg,

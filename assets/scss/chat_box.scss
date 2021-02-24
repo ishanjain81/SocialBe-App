@@ -42,6 +42,9 @@
 	    }
 
     }
+	#chat-messages-list::-webkit-scrollbar {
+		display: none; 
+	}
     #chat-message-input-container{
     	    height: 24%;
 		    width: 100%;
