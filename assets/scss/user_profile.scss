@@ -1,3 +1,71 @@
 body{
-    background-color: lightblue;
+    background-color: rgb(224, 224, 224);
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v481-bb-ning-11_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=c27cf7fc64343cf7e8cb0641230a74d3");
+    background-repeat: no-repeat;
+    background-size: cover;
+    #user-profile{
+        width: 50%;
+        position: sticky;
+        top: 8rem;
+        left: 26%;
+        text-align: center;
+        img{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            margin-bottom: 1.2rem;
+        }
+        form{
+            text-align: center;
+            input{
+                display: block;
+                margin-bottom: 10px;
+                font-size: 1rem;
+                height: 50px;
+                padding: 8px;
+                letter-spacing: 1.2px;
+                width: 40%;
+                margin-left: 14rem;
+            }
+            #update-avatar{
+                border: 1px solid black;
+                margin: 0;
+                margin-left: 14rem;
+                margin-bottom: 10px;
+                width: 40%;
+                text-align: center;
+                background-color: rgb(41, 40, 40);
+                input{
+                    padding-top: 14px;
+                    margin-left: 0;
+                    font-size: 1.3rem;
+                    width: auto;
+                    color: white;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            #update-button{
+                background: rgb(63,174,251);
+                background: radial-gradient(circle, rgba(63,174,251,1) 0%, rgba(130,70,252,1) 100%);
+                color: blanchedalmond;
+                font-size: 1.4rem;
+                font-weight: 600;
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 2px 2px darkgray;
+                    background: rgb(19,146,233);
+                    background: radial-gradient(circle, rgba(19,146,233,0.9307073171065301) 7%, rgba(130,70,252,1) 95%);
+                }
+            }
+        }
+        p{
+            font-family: sans-serif;
+            font-size: 3rem;
+            letter-spacing: 3px;
+            font-weight: 530;
+            color: blueviolet;
+        }
+    }
 }
