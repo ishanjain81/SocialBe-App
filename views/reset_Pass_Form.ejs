@@ -1,11 +1,16 @@
-
-<% if (user.isvalid) {%>
-    <h1>Change Your Password</h1>
-    <form action="resetPass/<%= user._id %>" method="POST">
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-        <input type="submit" value="Change Password">
-    </form>
-<% } else{%>
-    <h2>Link has Expired!</h2>
-<% } %>
+<link rel="stylesheet" href="/css/reset-pass-form.css">
+<div id="reset-pass-form-outer-main">
+    <% if (user.isvalid) {%>
+    <div id="reset-pass-form-outer">
+            <img src="/images/password-key.jpg" alt="Password">
+            <h1>Change Your Password</h1>
+            <form action="resetPass/<%= user._id %>" method="POST" id="reset-pass-form-inner">
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit">Change Password</button>
+            </form>
+    </div>
+    <% } else{%>
+        <h2>Link has Expired!</h2>
+    <% } %>
+</div>
