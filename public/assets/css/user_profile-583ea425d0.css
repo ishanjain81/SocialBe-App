@@ -1,0 +1,60 @@
+body {
+  background-color: #e0e0e0;
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v481-bb-ning-11_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=c27cf7fc64343cf7e8cb0641230a74d3");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body #user-profile {
+    width: 50%;
+    position: sticky;
+    top: 8rem;
+    left: 26%;
+    text-align: center; }
+    body #user-profile img {
+      border: 1px solid black;
+      height: 200px;
+      width: 200px;
+      margin-bottom: 1.2rem; }
+    body #user-profile form {
+      text-align: center; }
+      body #user-profile form input {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        height: 50px;
+        padding: 8px;
+        letter-spacing: 1.2px;
+        width: 40%;
+        margin-left: 14rem; }
+      body #user-profile form #update-avatar {
+        border: 1px solid black;
+        margin: 0;
+        margin-left: 14rem;
+        margin-bottom: 10px;
+        width: 40%;
+        text-align: center;
+        background-color: #292828; }
+        body #user-profile form #update-avatar input {
+          padding-top: 14px;
+          margin-left: 0;
+          font-size: 1.3rem;
+          width: auto;
+          color: white; }
+          body #user-profile form #update-avatar input:hover {
+            cursor: pointer; }
+      body #user-profile form #update-button {
+        background: #3faefb;
+        background: radial-gradient(circle, #3faefb 0%, #8246fc 100%);
+        color: blanchedalmond;
+        font-size: 1.4rem;
+        font-weight: 600; }
+        body #user-profile form #update-button:hover {
+          cursor: pointer;
+          box-shadow: 2px 2px darkgray;
+          background: #1392e9;
+          background: radial-gradient(circle, rgba(19, 146, 233, 0.930707) 7%, #8246fc 95%); }
+    body #user-profile p {
+      font-family: sans-serif;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      font-weight: 530;
+      color: blueviolet; }

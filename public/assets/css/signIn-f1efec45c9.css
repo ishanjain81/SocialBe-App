@@ -1,0 +1,130 @@
+#sign-in-main {
+  position: relative;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  top: -1.24vh;
+  background-image: url("/images/sign-in-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #sign-in-main #sign-in {
+    margin: 10px;
+    height: 75vh;
+    width: 70%;
+    left: 19%;
+    position: relative;
+    top: 6.8vh;
+    display: flex; }
+    #sign-in-main #sign-in .sign-in-outer {
+      width: 42%;
+      height: 98%;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      margin-left: 1px;
+      margin-right: 1px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 2px 2px #f3ecf2;
+      background: #ffa0d0;
+      background: linear-gradient(90deg, #ffa0d0 0%, #f5ff9e 56%); }
+      #sign-in-main #sign-in .sign-in-outer img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px; }
+      #sign-in-main #sign-in .sign-in-outer div {
+        width: 65%;
+        position: relative;
+        margin: 2rem;
+        left: 10%;
+        top: 6%; }
+        #sign-in-main #sign-in .sign-in-outer div h1 {
+          font-family: sans-serif;
+          font-size: 2.2rem;
+          letter-spacing: 1px;
+          font-weight: 600;
+          margin-bottom: 20px;
+          text-align: center;
+          color: darkblue; }
+        #sign-in-main #sign-in .sign-in-outer div #sign-in-form {
+          margin-bottom: 2%; }
+          #sign-in-main #sign-in .sign-in-outer div #sign-in-form input {
+            display: block;
+            margin-bottom: 5%;
+            font-size: 18px;
+            background-color: transparent;
+            width: 100%;
+            height: 50px;
+            border: none;
+            outline: none;
+            border-bottom: 2.5px solid magenta;
+            font-family: sans-serif;
+            letter-spacing: 1px; }
+          #sign-in-main #sign-in .sign-in-outer div #sign-in-form button {
+            background: #7b42e4;
+            background: linear-gradient(90deg, #7b42e4 0%, #e14de6 47%);
+            box-sizing: border-box;
+            padding: 4px;
+            margin-left: 2px;
+            margin-top: 15px;
+            border: 0px solid black;
+            width: 100%;
+            height: 2.8rem;
+            border-radius: 18px;
+            outline: none; }
+            #sign-in-main #sign-in .sign-in-outer div #sign-in-form button:hover {
+              cursor: pointer;
+              box-shadow: 2px 2px lightgrey;
+              background: #722ef0;
+              background: linear-gradient(90deg, #722ef0 0%, rgba(225, 77, 230, 0.871884) 67%); }
+            #sign-in-main #sign-in .sign-in-outer div #sign-in-form button p {
+              color: white;
+              padding: 1px;
+              margin: 0%;
+              font-family: sans-serif;
+              font-size: 1rem;
+              letter-spacing: 5px;
+              font-weight: 700; }
+        #sign-in-main #sign-in .sign-in-outer div #forgot-password {
+          margin: 0%;
+          box-sizing: border-box;
+          margin-top: 15px;
+          position: relative;
+          left: 33%; }
+          #sign-in-main #sign-in .sign-in-outer div #forgot-password a {
+            text-decoration: none;
+            font-size: 16px; }
+            #sign-in-main #sign-in .sign-in-outer div #forgot-password a:hover {
+              color: #4ea0e4; }
+        #sign-in-main #sign-in .sign-in-outer div #or-sign-in {
+          margin: 0%;
+          margin-top: 6px;
+          position: relative;
+          left: 46%;
+          display: inline-block;
+          width: auto;
+          font-size: 1.1rem; }
+        #sign-in-main #sign-in .sign-in-outer div #google-sign-in {
+          margin-top: 10px; }
+          #sign-in-main #sign-in .sign-in-outer div #google-sign-in button {
+            width: 100%;
+            padding: 3px;
+            box-sizing: border-box;
+            height: 45px;
+            background-color: white;
+            border: 0.5px solid #4d4d4d;
+            outline: none;
+            border-radius: 16px; }
+            #sign-in-main #sign-in .sign-in-outer div #google-sign-in button img {
+              height: 98%;
+              width: 98%; }
+            #sign-in-main #sign-in .sign-in-outer div #google-sign-in button:hover {
+              cursor: pointer;
+              box-shadow: 2px 2px lightgrey; }
+        #sign-in-main #sign-in .sign-in-outer div h4 {
+          font-size: 1.22rem;
+          text-align: center; }
+          #sign-in-main #sign-in .sign-in-outer div h4 a {
+            text-decoration: none;
+            color: #291be7; }
+            #sign-in-main #sign-in .sign-in-outer div h4 a:hover {
+              color: rgba(19, 150, 236, 0.925); }

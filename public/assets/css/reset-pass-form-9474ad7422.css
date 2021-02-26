@@ -1,0 +1,53 @@
+#reset-pass-form-outer-main {
+  height: 100vh;
+  background-image: url("/images/Reset-password-person.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #reset-pass-form-outer-main #reset-pass-form-outer {
+    border: 1px solid black;
+    width: 28%;
+    height: 60vh;
+    position: sticky;
+    text-align: center;
+    left: 35%;
+    top: 20%;
+    background: #66f0f2;
+    background: linear-gradient(336deg, #66f0f2 0%, rgba(175, 250, 180, 0.969923) 66%); }
+    #reset-pass-form-outer-main #reset-pass-form-outer img {
+      margin-top: 30px;
+      height: 35%; }
+    #reset-pass-form-outer-main #reset-pass-form-outer h1 {
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-family: sans-serif;
+      color: rgba(17, 48, 226, 0.89); }
+    #reset-pass-form-outer-main #reset-pass-form-outer #reset-pass-form-inner input {
+      display: block;
+      margin-bottom: 10px;
+      margin-left: 5.2rem;
+      width: 60%;
+      height: 40px;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      padding: 2px;
+      outline: none; }
+    #reset-pass-form-outer-main #reset-pass-form-outer #reset-pass-form-inner button {
+      height: 50px;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      padding: 4px;
+      font-weight: 700;
+      margin-top: 4px;
+      border-radius: 20px;
+      outline: none; }
+      #reset-pass-form-outer-main #reset-pass-form-outer #reset-pass-form-inner button:hover {
+        cursor: pointer;
+        box-shadow: 2px 1px darkgray; }
+  #reset-pass-form-outer-main h2 {
+    font-family: sans-serif;
+    text-align: center;
+    position: sticky;
+    top: 45%;
+    font-size: 4rem;
+    color: maroon;
+    letter-spacing: 1px; }

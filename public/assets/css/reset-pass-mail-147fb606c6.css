@@ -1,0 +1,59 @@
+#reset-pass-mail-outer {
+  background-image: url("/images/Reset-password-person.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative; }
+  #reset-pass-mail-outer #reset-pass-mail {
+    border: 1px solid black;
+    text-align: center;
+    position: sticky;
+    top: 18%;
+    margin-left: 33rem;
+    height: 66vh;
+    width: 30%;
+    font-family: sans-serif;
+    background: #0e9799;
+    background: linear-gradient(336deg, #0e9799 0%, rgba(13, 177, 148, 0.919503) 67%); }
+    #reset-pass-mail-outer #reset-pass-mail div {
+      margin-top: 1.5rem; }
+      #reset-pass-mail-outer #reset-pass-mail div img {
+        height: 200px; }
+    #reset-pass-mail-outer #reset-pass-mail #reset-mail-form h3 {
+      font-size: 34px;
+      color: #f3ebc7;
+      margin: 0;
+      margin-top: 0.6rem; }
+    #reset-pass-mail-outer #reset-pass-mail #reset-mail-form p {
+      font-size: 18px;
+      color: white; }
+    #reset-pass-mail-outer #reset-pass-mail #reset-mail-form form input {
+      width: 67%;
+      margin-left: 4.6rem;
+      margin-bottom: 1.5rem;
+      height: 36px;
+      padding: 6px;
+      padding-left: 8px;
+      font-size: 15px;
+      display: block;
+      outline: none;
+      letter-spacing: 1px;
+      border-radius: 20px;
+      border: 1px solid red; }
+    #reset-pass-mail-outer #reset-pass-mail #reset-mail-form form button {
+      background-image: linear-gradient(90deg, transparent, #fed757);
+      font-size: 15px;
+      width: 50%;
+      height: 44px;
+      padding: 6px;
+      font-weight: 550;
+      box-sizing: border-box;
+      border-radius: 50px;
+      background-size: 100%;
+      background-clip: padding-box;
+      color: #1b0a80;
+      outline: none;
+      border: 4px solid rgba(246, 33, 33, 0.712); }
+      #reset-pass-mail-outer #reset-pass-mail #reset-mail-form form button:hover {
+        box-shadow: 2px 2px black;
+        cursor: pointer; }
