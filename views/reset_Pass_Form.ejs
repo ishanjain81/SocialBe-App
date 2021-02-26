@@ -1,8 +1,13 @@
-<link rel="stylesheet" href="/css/reset-pass-form.css">
+<style>
+    #reset-pass-form-outer-main{
+        background-image: url("<%= assetPath('images/Reset-password-person.png') %>");
+    }
+</style>
+<link rel="stylesheet" href="<%= assetPath('css/reset-pass-form.css') %>">
 <div id="reset-pass-form-outer-main">
     <% if (user.isvalid) {%>
     <div id="reset-pass-form-outer">
-            <img src="/images/password-key.jpg" alt="Password">
+            <img src="<%= assetPath('images/password-key.jpg') %>" alt="Password">
             <h1>Change Your Password</h1>
             <form action="resetPass/<%= user._id %>" method="POST" id="reset-pass-form-inner">
                 <input type="password" name="password" placeholder="Password" required>

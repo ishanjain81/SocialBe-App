@@ -1,9 +1,14 @@
-<link rel="stylesheet" href="/css/signUp.css">
+<link rel="stylesheet" href="<%= assetPath('css/signUp.css') %>">
+<style>
+    #sign-up-outer{
+        background-image: url("<%= assetPath('images/sign-up-background.jpeg') %>");
+    }
+</style>
 <div id="sign-up-outer">
     <div id="sign-up">
         <h1>Sign Up</h1>
         <form action="/users/auth/google" method="GET" id="google-sign-up">
-            <button type="submit"><img src="/images/google-sign-up1.JPG" alt="Sign-Up with Google"></button>
+            <button type="submit"><img src="<%= assetPath('images/google-sign-up.png') %>" alt="Sign-Up with Google"></button>
         </form>
         <form action="/users/create" method="POST" id="sign-up-form">
             <input type="text" name="name" placeholder="Your name" required>

@@ -1,7 +1,12 @@
-<link rel="stylesheet" href="/css/reset-pass-mail.css">
+<link rel="stylesheet" href="<%= assetPath('css/reset-pass-mail.css') %>">
+<style>
+    #reset-pass-mail-outer{
+        background-image: url("<%= assetPath('images/Reset-password-person.png') %>");
+    }
+</style>
 <div id="reset-pass-mail-outer">
     <div id="reset-pass-mail">
-        <div><img src="/images/password-reset-mail.png" alt="Password-Reset"></div>
+        <div><img src="<%= assetPath('images/password-reset-mail.png') %>" alt="Password-Reset"></div>
         <div id="reset-mail-form">
             <h3>Forgot Password</h3>
             <p>Enter Your Registered Email</p>
