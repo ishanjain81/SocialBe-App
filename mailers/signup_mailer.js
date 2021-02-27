@@ -8,7 +8,7 @@ exports.newSignUp = (email,name) => {
     nodeMailer.transporter.sendMail({
         from: 'webcodedev2021@gmail.com',
         to: email,
-        subject: "Welocme To Codeial",
+        subject: "Welocme To SocialBe",
         // html: '<h1> Yup, your comment is now published  </h1>'
         html: htmlString
     },(err,info) => {

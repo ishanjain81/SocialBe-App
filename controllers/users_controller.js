@@ -28,7 +28,7 @@ const SignUpMailer = require('../mailers/signup_mailer');
 module.exports.profile = function(req, res){
     User.findById(req.params.id,function(err,user){
         return res.render('user_profile',{
-            title: "Profile",
+            title: "SocialBe | Profile",
             profile_user: user
         });
     });
@@ -91,7 +91,7 @@ module.exports.signUp = function(req,res){
     }
 
     return res.render('user_sign_up',{
-        title: "Codeial | Sign Up"
+        title: "SocialBe | Sign Up"
     })
 }
 
@@ -101,7 +101,7 @@ module.exports.signIn = function(req,res){
         return res.redirect('/users/profile');
     }
     return res.render('user_sign_in',{
-        title: "Codeial | Sign In"
+        title: "SocialBe | Sign In"
     })
 }
 
@@ -170,7 +170,7 @@ module.exports.destroySession = function(req,res){
 
 module.exports.EnteringEmail = function(req,res){
     return res.render('reset_pass_email',{
-        title: "Reset-Password",
+        title: "SocialBe | Reset Password",
     });
 }
 
@@ -217,7 +217,7 @@ module.exports.PassingResetForm = function(req,res){
         }
         else{
             return res.render('reset_Pass_Form',{
-                title: "Reset-Password-Form",
+                title: "SocialBe | Reset Password",
                 user: user
             });
         }
