@@ -26,7 +26,6 @@ class PostComments{
         this.newCommentForm.submit(function(e){
             e.preventDefault();
             let self = this;
-
             $.ajax({
                 type: 'post',
                 url: '/comments/create',
@@ -60,19 +59,18 @@ class PostComments{
 
     newCommentDom(comment){
         // I've added a class 'delete-comment-button' to the delete comment link and also id to the comment's li
-        return $(`<li id="comment-${ comment._id }">
+        return $(`<li id="comment-${ comment._id } class="comments-list">
                         <p>
-                            
-                            <small>
-                                <a class="delete-comment-button" href="/comments/destroy/${comment._id}">X</a>
-                            </small>
-                            
-                            ${comment.content}
-                            <br>
-                            <small>
+                            <small id="comment-name">
                                 ${comment.user.name}
                             </small>
-                            <small>
+
+                            <small class="delete-comment">
+                                <a class="delete-comment-button" href="/comments/destroy/${comment._id}"><i class="fad fa-trash"></i></a>
+                            </small>
+                            <br>
+                    
+                            <small class="comments-likes">
                             
                                 <a class="toggle-like-button" data-likes="0" href="/likes/toggle/?id=${comment._id}&type=Comment">
                                     <i class="fas fa-thumbs-up"></i>
@@ -82,6 +80,7 @@ class PostComments{
                                 </a>
                             
                             </small>
+                            ${comment.content}
                         </p>    
 
                 </li>`);

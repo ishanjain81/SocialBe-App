@@ -1,14 +1,15 @@
 
 <link rel="stylesheet" href="<%= assetPath('css/home.css') %>">
 <link rel="stylesheet" href="<%= assetPath('css/chat_box.css') %>">
+<link rel="stylesheet" href="<%= assetPath('css/post.css') %>">
 <script src="<%= assetPath('js/font.js') %>"></script>
 <div id="home-container">
     <section id="feed-posts">
-        <h4>Posts</h4>
+        <div id="posts-head"><h4>Posts</h4></div>
         <% if (locals.user){ %>
             <form action="/posts/create" id="new-post-form" method="POST">
-                <textarea name="content" cols="30" rows="3" placeholder="Type Here..."></textarea>
-                <input type="submit" value="Post">
+                <textarea name="content" cols="28" rows="6" placeholder="Type Here..." required></textarea>
+                <button type="submit">Post</button>
             </form>
         <% } %>
         <div id="posts-list-container">
@@ -24,6 +25,7 @@
         <h4>Friends</h4>
         <% for(u of all_users){ %>
             <p>
+                <img src="<%= u.avatar%>" alt="<%= u.name %>">
                 <a href="users/profile/<%= u.id %>"><%= u.name %></a>
             </p>
         <% } %>
@@ -34,12 +36,9 @@
 <!-- importing this script for creating the comments -->
 <script src="<%= assetPath('js/home_post_comments.js') %>"></script>
 <script src="<%= assetPath('js/home_posts.js') %>"></script>
-<!-- <script src="/js/home_post_comments.js" ></script>
-<script src="/js/home_posts.js"></script> -->
 
 <!-- import the script file for toggle likes, also run it over for the already present posts and comments on the page -->
 <script src="<%= assetPath('js/toggle_likes.js') %>"></script>
-<!-- <script src="js/toggle_likes.js"></script> -->
 <script>
     $('.toggle-like-button').each(function(){
         let self = this;
@@ -47,7 +46,6 @@
     });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js"></script>
-<!-- <script src="/js/chat_engine.js"></script> -->
 <script src="<%= assetPath('js/chat_engine.js') %>"></script>
 <% if(locals.user){ %>
     <script>

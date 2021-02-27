@@ -1,13 +1,7 @@
 {
-  "css/chat_box.css": "css/chat_box-305b2a7325.css",
-  "css/footer.css": "css/footer-80b8801692.css",
-  "css/header.css": "css/header-ad76a634b5.css",
-  "css/home.css": "css/home-cf0d351f65.css",
-  "css/layout.css": "css/layout-a7f582cede.css",
-  "css/likes.css": "css/likes-86ab03edea.css",
-  "css/reset-pass-form.css": "css/reset-pass-form-9474ad7422.css",
-  "css/reset-pass-mail.css": "css/reset-pass-mail-4b0dd50264.css",
-  "css/signIn.css": "css/signIn-a236a2f242.css",
-  "css/signUp.css": "css/signUp-4fb82db270.css",
-  "css/user_profile.css": "css/user_profile-d903e57d5f.css"
+  "js/chat_engine.js": "js/chat_engine-e9782682d5.js",
+  "js/font.js": "js/font-2a5ccd8463.js",
+  "js/home_post_comments.js": "js/home_post_comments-99e677bd1e.js",
+  "js/home_posts.js": "js/home_posts-a92175598a.js",
+  "js/toggle_likes.js": "js/toggle_likes-9858dbfa6f.js"
 }

@@ -5,7 +5,6 @@
 
         newPostForm.submit(function(e){
             e.preventDefault();
-
             $.ajax({
                 type: 'post',
                 url: '/posts/create',
@@ -30,6 +29,7 @@
                         
                     }).show();
 
+
                 }, error: function(error){
                     console.log(error.responseText);
                 }
@@ -40,20 +40,19 @@
 
     // method to create a post in DOM
     let newPostDom = function(post){
-        return $(`<li id="post-${post._id}">
+        return $(`<div id="single-post">
+                <li id="post-${post._id}" class="single-post-list">
                     <p>
-                        
-                        <small>
-                            <a class="delete-post-button"  href="/posts/destroy/${ post._id }">X</a>
-                        </small>
-                       
-                        ${ post.content }
-                        <br>
-                        <small>
+                        <small id="post-name">
                         ${ post.user.name }
                         </small>
-                        <br>
-                        <small>
+                        <small class="delete-post-icon">
+                            <a class="delete-post-button"  href="/posts/destroy/${ post._id }"><i class="fad fa-trash"></i></a>
+                        </small>
+                        <div id="post-content">
+                        ${ post.content }
+                        </div>
+                        <small id="post-likes">
                             
                                 <a class="toggle-like-button" data-likes="0" href="/likes/toggle/?id=${post._id}&type=Post">
                                     <i class="fas fa-thumbs-up"></i>
@@ -69,7 +68,7 @@
                             <form id="post-${ post._id }-comments-form" action="/comments/create" method="POST">
                                 <input type="text" name="content" placeholder="Type Here to add comment..." required>
                                 <input type="hidden" name="post" value="${ post._id }" >
-                                <input type="submit" value="Add Comment">
+                                <button type="submit">Add Comment</button>
                             </form>
                
                 
@@ -79,7 +78,8 @@
                             </ul>
                         </div>
                     </div>
-                    
+                
+                </div>
                 </li>`)
     }
 
