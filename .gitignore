@@ -1,3 +1,3 @@
 node_modules/
-config/environment.js
+config/environment_private.js
 production_logs
