@@ -1,13 +1,13 @@
 
 
 module.exports.chatSockets = function(socketServer){
-    // let io = require('socket.io')(socketServer,{
-    //     cors: {
-    //         origin: "http://52.66.239.239:8000",
-    //         credentials: true
-    //     }
-    // });
-    let io = require('socket.io')(socketServer);
+    let io = require('socket.io')(socketServer,{
+        cors: {
+            origin: "http://52.66.239.239:80",
+            credentials: true
+        }
+    });
+    // let io = require('socket.io')(socketServer);
     
     io.sockets.on('connection',function(socket){
          console.log('new connection received',socket.id);
