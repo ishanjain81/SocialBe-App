@@ -197,7 +197,7 @@ module.exports.updatePass = function(req,res){
                 user: user._id,
                 token: crypto.randomBytes(20).toString('hex'),
                 isvalid: true,
-            },Calling);
+            },Calling());
         }
         else{
             req.flash('error', 'User doesnt exist');

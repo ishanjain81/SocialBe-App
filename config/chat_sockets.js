@@ -3,8 +3,10 @@
 module.exports.chatSockets = function(socketServer){
     let io = require('socket.io')(socketServer,{
         cors: {
-            origin: "http://52.66.239.239:80",
-            credentials: true
+            origin: "http://socialbe.live:80",
+            credentials: true,
+            methods: ["GET", "POST"],
+            allowedHeaders: ["sockets"],
         }
     });
     // let io = require('socket.io')(socketServer);

@@ -4,7 +4,13 @@ class ChatEngine{
         this.userEmail = userEmail;
         this.userName = userName;
 
-        this.socket = io.connect("http://52.66.239.239:5000");
+        this.socket = io.connect("http://socialbe.live:5000",{
+            transport: ['websocket'],
+            withCredentials: true,
+            extraHeaders: {
+                "sockets": "abcd"
+             }
+        });
 
         if(this.userEmail){
             this.connectionHandler();
